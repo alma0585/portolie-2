@@ -91,3 +91,59 @@ grades.forEach(function (grade) {
 })
 
 console.log("Lowest grade in class", lowestgrade)
+
+
+
+const island = ['T', '-', 'T']
+
+console.log("There are 3 moves in the island",island.length)
+
+
+for (let i = 0; i < island.length; i++) {
+    if (island[i] === 'T'){
+        console.log(`Treasure found at move ${i + 1}:)`); }
+    else {
+        console.log(`No treasure found at move ${i + 1} :(`); }
+
+}
+
+let countOfTreasure = 0;
+
+for (let i =0; i < island.length; i++) {
+    if (island[i] === 'T') {
+        countOfTreasure++;
+    }
+}
+
+console.log("Total treasures on this island:", countOfTreasure)
+
+
+
+
+
+
+
+
+
+
+
+
+function getStartupName() {
+
+    const firstName = ["Lil", "Big", "Dr.", "Ice", "Yo", "Young", "Chief", "Playboi", "Dj"];
+    const secondName = ["Heat", "Swag", "Cookie", "Llama", "Junglejuice", "Fortnite", "Cocio", "Crisp", "Slipper"];
+// Her har jeg lavet 2 arrays med navne jeg gerne vil have med i min generator
+
+    const randomFirstName = firstName[Math.floor(Math.random() * firstName.length)];
+    const randomSecondName = secondName[Math.floor(Math.random() * secondName.length)];
+// Her bruger jeg så Math.random funktionen til at tilfældigt vælge et navn fra hver array
+
+    return randomFirstName + " " + randomSecondName;
+// også her får jeg den til at returnere det random første navn og det andet random navn med mellemrum imellem
+
+}
+
+console.log(getStartupName())
+console.log(getStartupName())
+console.log(getStartupName())
+console.log(getStartupName())
