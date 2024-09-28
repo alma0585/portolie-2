@@ -1,0 +1,97 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 25px;
+    padding: 15px;
+    align-self: start;
+    color: whitesmoke;
+
+    grid-column: 1 / 4;
+    grid-row: 1 / 2;
+    z-index: 1000;
+
+}
+
+.header div img {
+    width: 180px;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+
+}
+
+li img {
+    width: 40px;
+}
+
+.icons img {
+    width: 30px;
+}
+
+
+.serieintro {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+    justify-self: center;
+    color: whitesmoke;
+}
+
+h1 {
+    font-family: "Kanit", sans-serif;
+    font-style: italic;
+    font-size: 50px;
+}
+
+h1 span {
+    text-decoration: underline;
+}
+
+.serieintro div {
+    display: flex;
+    gap: 5px;
+}
+
+.serieintro div p:first-child {
+    border: 1px solid;
+    padding: 0 5px;
+}
+.serieintro div p:nth-child(2) {
+    border: 1px solid;
+    border-radius: 50px;
+    padding: 0 5px;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto 1fr 1fr;
+
+}
+
+
+img {
+    grid-column: 1 / 4;
+    grid-row: 1 / 4;
+    width: 100%;
+    height: 100%;
+}
+
+li, p {
+    font-family: "Outfit", sans-serif;
+}
+
+button {
+
+    background-color: #2E5266;
+    color: whitesmoke;
+    padding: 5px 10px;
+    border-radius: 12px;
+}
+
+
+
+
